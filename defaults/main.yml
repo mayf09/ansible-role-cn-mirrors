@@ -1,0 +1,7 @@
+---
+apt: true
+apt_source: aliyun
+
+pip: false
+pip_source: aliyun
+
