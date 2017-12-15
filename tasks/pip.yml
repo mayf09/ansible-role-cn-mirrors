@@ -1,0 +1,14 @@
+---
+- name: include pip vars
+  include_vars: pip-{{ pip_source }}.yml
+  when: pip_host is not defined
+
+- name: create .pip directory
+  file:
+    path='~/.config/pip'
+    state=directory
+
+- name: config pip mirror
+  template:
+    src=pip.conf.j2
+    dest='~/.config/pip/pip.conf'
