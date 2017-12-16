@@ -1,7 +1,8 @@
 ---
-apt: true
-apt_source: aliyun
+cm_user: '{{ ansible_env.USER}}'
 
-pip: false
-pip_source: aliyun
+cm_apt_enable: true
+cm_apt_source: aliyun
 
+cm_pip_enable: false
+cm_pip_source: aliyun
