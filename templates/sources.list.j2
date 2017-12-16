@@ -1,4 +1,4 @@
-deb http://{{ cm_apt_host }}/debian/ jessie main non-free contrib
-deb http://{{ cm_apt_host }}/debian/ jessie-proposed-updates main non-free contrib
-deb-src http://{{ cm_apt_host }}/debian/ jessie main non-free contrib
-deb-src http://{{ cm_apt_host }}/debian/ jessie-proposed-updates main non-free contrib
+deb http://{{ cm_apt_host }}/debian/ {{ ansible_distribution_release}} main non-free contrib
+deb http://{{ cm_apt_host }}/debian/ {{ ansible_distribution_release}}-proposed-updates main non-free contrib
+deb-src http://{{ cm_apt_host }}/debian/ {{ ansible_distribution_release}} main non-free contrib
+deb-src http://{{ cm_apt_host }}/debian/ {{ ansible_distribution_release}}-proposed-updates main non-free contrib
