@@ -1,7 +1,7 @@
 ---
 - name: include pip vars
-  include_vars: pip-{{ pip_source }}.yml
-  when: pip_host is not defined
+  include_vars: pip-{{ cm_pip_source }}.yml
+  when: cm_pip_host is not defined
 
 - name: create .pip directory
   file:
