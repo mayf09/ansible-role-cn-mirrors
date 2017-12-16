@@ -1,5 +1,5 @@
 ---
-cm_user: '{{ ansible_env.USER}}'
+cm_user: '{{ ansible_user_id }}'
 
 cm_apt_enable: true
 cm_apt_source: aliyun
