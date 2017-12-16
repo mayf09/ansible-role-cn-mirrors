@@ -8,13 +8,15 @@ Role Variables
 
 Available variables are listed below, along with default values:
 
-    apt: true
-    apt_source: aliyun
-    apt_host:
+    cm_user: {{ ansible_env.USER }}
 
-    pip: false
-    pip_source: aliyun
-    pip_host:
+    cm_apt_enable: true
+    cm_apt_source: aliyun
+    cm_apt_host:
+
+    cm_pip_enable: false
+    cm_pip_source: aliyun
+    cm_pip_host:
 
 Configure `apt_host/pip_host` will make `apt_source/pip_source` disabled.
 

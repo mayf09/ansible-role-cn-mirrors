@@ -1,6 +1,7 @@
 ---
 - include: setup-Debian.yml
-  when: ansible_os_family == 'Debian'
+  when: ansible_os_family == 'Debian' and cm_apt_enable
 
 - include: pip.yml
-  when: pip
+  when: cm_pip_enable
+  become_user: '{{ cm_user }}'
