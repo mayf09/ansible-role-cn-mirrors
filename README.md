@@ -18,6 +18,10 @@ Available variables are listed below, along with default values:
     cm_pip_source: aliyun
     cm_pip_host:
 
+    cm_npm_enable: false
+    cm_npm_source: taobao
+    cm_npm_host:
+
 Configure `apt_host/pip_host` will make `apt_source/pip_source` disabled.
 
 Example Playbook

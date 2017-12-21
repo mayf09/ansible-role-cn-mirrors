@@ -5,6 +5,7 @@
   vars:
     cm_apt_host: ftp.us.debian.org
     cm_pip_enable: true
+    cm_npm_enable: true
 
   roles:
     - role_under_test

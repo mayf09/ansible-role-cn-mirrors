@@ -6,3 +6,6 @@ cm_apt_source: aliyun
 
 cm_pip_enable: false
 cm_pip_source: aliyun
+
+cm_npm_enable: false
+cm_npm_source: taobao

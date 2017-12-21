@@ -1,0 +1,9 @@
+---
+- name: include npm vars
+  include_vars: npm-{{ cm_npm_source }}.yml
+  when: cm_npm_host is not defined
+
+- name: config npm mirror
+  template:
+    src=npmrc.j2
+    dest='~/.npmrc'

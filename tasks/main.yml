@@ -1,7 +1,14 @@
 ---
-- include: setup-Debian.yml
+- name: include debian task
+  include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian' and cm_apt_enable
 
-- include: pip.yml
+- name: include pip task
+  include_tasks: pip.yml
   when: cm_pip_enable
+  become_user: '{{ cm_user }}'
+
+- name: include npm task
+  include_tasks: npm.yml
+  when: cm_npm_enable
   become_user: '{{ cm_user }}'
